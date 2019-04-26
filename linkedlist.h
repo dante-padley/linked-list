@@ -16,11 +16,12 @@ private:
     node * head;
     int count(); // RECURSIVE
     int sum(); // RECURSIVE
+    int getsum(node * ptr);
 
 public:
     linkedlist();
     ~linkedlist(); // RECURSIVE
-    void addToFront(int n);
+    void addToFront(int n); 
     double average(); // uses sum and count functions
     void writeInorder(string & file);
     void writeReversed(string & file);
